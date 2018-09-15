@@ -3,10 +3,10 @@ CREATE DATABASE burgers_db;
 
 USE burgers_db;
 
-CREATE TABLE burgers
-(
-	id INT AUTO_INCREMENT PRIMARY KEY,
-	burger_name VARCHAR(100) not null,
-	devoured BOOLEAN default false,
-	date TIMESTAMP
-);
+
+-- Table Creation
+CREATE TABLE burgers(
+id INTEGER AUTO_INCREMENT PRIMARY KEY,
+burger_name VARCHAR(50),
+devoured BOOLEAN,
+date TIMESTAMP);
